@@ -3,10 +3,9 @@ This is a wrapper on the sumy library of python. A ready to use text summarizer 
 By default we are using LexRankSummarizer method to do the automatic text summarization on a given corpus.
 For the time being the corpus needs to be updated in the refer.txt file which is kept empty for the time being.
 
-After the corpus is copied to the "refer.txt" file,
-we need to trigger
-
 python3 run.py  /aboslute/path/to/the/text/file/with/.txt/extension
+
+If you don't have a text file then copy your desired text to the file called refer.txt without the filename in the command line.
 
 and see the magic after that.
 
