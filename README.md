@@ -1,4 +1,4 @@
-This is a wrapper on the sumy library of python.
+This is a wrapper on the sumy library of python. A ready to use text summarizer which is just a clone away and can we used for quick experimentation.
 
 By default we are using LexRankSummarizer method to do the automatic text summarization on a given corpus.
 For the time being the corpus needs to be updated in the refer.txt file which is kept empty for the time being.
