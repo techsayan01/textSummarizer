@@ -6,7 +6,7 @@ For the time being the corpus needs to be updated in the refer.txt file which is
 After the corpus is copied to the "refer.txt" file,
 we need to trigger
 
-python3 run.py
+python3 run.py  /aboslute/path/to/the/text/file/with/.txt/extension
 
 and see the magic after that.
 
