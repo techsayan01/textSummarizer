@@ -6,7 +6,7 @@ For the time being the corpus needs to be updated in the refer.txt file which is
 After the corpus is copied to the "refer.txt" file,
 we need to trigger
 
-python3 test.py
+python3 run.py
 
 and see the magic after that.
 
