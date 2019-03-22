@@ -8,11 +8,14 @@ from sumy.summarizers.luhn import LuhnSummarizer
 from sumy.summarizers.lsa import LsaSummarizer
 
 #import the file
-file = sys.argv[1]
-if os.stat(file).st_size == 0 : 
+if len(sys.argv) > 1:
+	file = sys.argv[1]
+	exists = os.path.isfile(file)
+	if not exists:
+		file = "refer.txt"
+else:
 	file = "refer.txt"
-	if os.stat(file).st_size == 0 : 
-		return
+
 #tokenize the file
 parser = PlaintextParser.from_file(file, Tokenizer("english"))
 
