@@ -23,6 +23,9 @@ parser = PlaintextParser.from_file(file, Tokenizer("english"))
 text  = open(file, "r")
 count = len((text.read()).split())
 
+if count == 0:
+	print("No content present")
+	exit()
 # Calculate lines
 if count > 10000:
 	lines = 100
