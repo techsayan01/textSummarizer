@@ -10,7 +10,7 @@ from sumy.summarizers.lsa import LsaSummarizer
 #import the file
 if len(sys.argv) > 1:
 	file = sys.argv[1]
-	if file.endswith('.txt') or file.endswith('.doc') or file.endswith('.docx'):
+	if file.lower().endswith('.txt') or file.lower().endswith('.doc') or file.lower().endswith('.docx'):
 		exists = os.path.isfile(file)
 	else:
 		print("Please enter a valid file")
