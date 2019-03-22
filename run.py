@@ -10,7 +10,12 @@ from sumy.summarizers.lsa import LsaSummarizer
 #import the file
 if len(sys.argv) > 1:
 	file = sys.argv[1]
-	exists = os.path.isfile(file)
+	if file.endswith('.txt') or file.endswith('.doc') or file.endswith('.docx'):
+		exists = os.path.isfile(file)
+	else:
+		print("Please enter a valid file")
+		print("Only accepted txt/doc/docx as file extensions")
+		exit()
 	if not exists:
 		file = "refer.txt"
 else:
